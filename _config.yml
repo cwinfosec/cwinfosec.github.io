@@ -20,8 +20,8 @@ navigation: # Navigation links
   - {name: 'Home', link: '/'}
   - {name: 'About', link: '/about'}
 
-tagline: >
-  cwinfosec - Worldwide
+#tagline: >
+  #cwinfosec - Worldwide
 
 hero_img: posts/banner.PNG # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
