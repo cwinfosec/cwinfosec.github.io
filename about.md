@@ -20,8 +20,3 @@ defenses.
 - CVE-2019-19383, Remote Buffer Overflow in FreeFTP Server 1.0.8
 - CVE-2017-12301, Firmware Escape and Root Privilege Escalation in Cisco NX-OS
 
-You can find the source code for the Jekyll new theme at:
-[sleek](https://github.com/janczizikow/sleek)
-
-You can find the source code for Jekyll at
-[jekyll](https://github.com/jekyll/jekyll)
