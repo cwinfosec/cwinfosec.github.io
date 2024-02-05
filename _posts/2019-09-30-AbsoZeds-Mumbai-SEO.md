@@ -2,6 +2,7 @@
 layout: post
 title: Mumbai SEO Write-Up
 date: 2019-09-29
+featured-img: mumbai_splash
 categories: [VulnerableMachine, Pentesting, InfoSec, Writeup]
 ---
 
