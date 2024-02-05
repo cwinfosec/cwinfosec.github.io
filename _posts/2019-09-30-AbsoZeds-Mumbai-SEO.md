@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: Mumbai SEO Write-Up
 date: 2019-09-29
 classes: wide
