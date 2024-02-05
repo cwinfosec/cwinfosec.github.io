@@ -1,8 +1,8 @@
 # SITE CONFIGURATION
-title: cwinfosec # your site title
+title: Hack responsibly, learn relentlessly # your site title
 author: cwinfosec # You :P
 description: > # Meta description of Homepage
-  Hack responsibly, learn relentlessly.
+  Hack responsibly, learn relentlessly
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://cwinfosec.org/" # the base hostname & protocol for your site, e.g. http://example.com
 
