@@ -25,7 +25,7 @@ Looking at the note we see an interesting quip from the admin concerning the use
 >TODO:
 Move these multiple HTTP Servers running to Docker. I hear containers make things inherently secure - maybe this will shut those security researchers up.
 Also, don't forget to remove all those privilege escalation exploits from /tmp - we don't want to rebuild the server again.
-- AbsoZed
+\- AbsoZed
 
 Additionally, there is a small mention of privilege escalation scripts needing to be cleaned up in /tmp. That is definitely interesting, and we'll make a note to follow-up on it later.
 
