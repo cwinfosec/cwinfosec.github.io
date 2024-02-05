@@ -1,14 +1,8 @@
 ---
-layout: single
+layout: post
 title: A Gentle Intro to ROP and Bypassing DEP
 date: 2019-11-29
-classes: wide
-tags:
-  - Exploit-Development
-  - Vulnerability
-  - Pentesting
-  - InfoSec
-  - Writeup
+categories: [ExploitDev, Pentesting, InfoSec, Writeup]
 ---
 
 This post is intended as a soft introduction to return-oriented-programming and bypassing DEP. Nothing in this blog post is new or ground-breaking research; however, sometimes it helps to hear another point of view. Today we will be looking at a very basic buffer overflow in [VulnServer](http://www.thegreycorner.com/2010/12/introducing-vulnserver.html) with a modern twist. VulnServer is an intentionally vulnerable application for researchers and enthusiasts to practice their skills. There are a variety of different, "challenges," so-to-speak that cover different scenarios one might encounter in traditional [buffer overflow attacks](https://en.wikipedia.org/wiki/Buffer_overflow). We'll cover some basics, a quick history lesson on Windows memory protections, and how we can abuse certain conditions to bypass those protections.

@@ -1,13 +1,8 @@
 ---
-layout: single
+layout: post
 title: Pwn School Project Syllabus
 date: 2021-09-10
-classes: wide
-tags:
-  - General
-  - Pentesting
-  - InfoSec
-  - Career
+categories: [General, Pentesting, InfoSec, Career]
 ---
 
 Hello friends! It's been a while, hasn't it? Today, I have a small community contribution. I've spent the last few weeks very briefly reviewing every video on this post, and I've sorted them into various categories as they relate to common penetration testing methodologies. It may not be 100% accurate...but with that stipulation out of the way, I want to chime in my personal thoughts on [Phillip Wylie's](https://twitter.com/PhillipWylie) Pwn School Project. 

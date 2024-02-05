@@ -1,13 +1,8 @@
 ---
-layout: single
+layout: post
 title: The Power of Friends In InfoSec
 date: 2021-03-22
-classes: wide
-tags:
-  - General
-  - Pentesting
-  - InfoSec
-  - Career
+categories: [General, InfoSec, Career]
 ---
 
 2020 was a crazy year for me. Part of me feels bad for not blogging in well over a year; however, another part of me doesn't regret it. If you've followed me online, you will know I've started a Youtube channel, have made aquantainces and friends with many in our industry, and have got my dream job as a red teamer. In a mere 8 months, we've reached over 1300 followers on Twitter, a little over 900 subscribers on Youtube, picked up one official mentee, and a handful of unofficial mentees. That's a win for both you and myself! I wouldn't be able to do this without the support of all of you, and this is still just the beginning. The main goal still stands: to change your life, and give you the tools you need to survive in InfoSec - specifically, pentesting and red teaming. 
