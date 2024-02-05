@@ -96,7 +96,7 @@ This gadget "pops" two words off of the stack, and returns execution control to 
 
 First let's quickly verify DEP is enabled:
 
-![screenshot](/assets/images/vulnserverdep/dep_enabled.PNG)
+![screenshot](/assets/img/vulnserverdep/dep_enabled.PNG)
 
 Let's assume we've already fuzzed the application, and found a bug within the "TRUN" command. We'll start off with a proof-of-concept skeleton exploit, and build-up the foundation for our knowledge base from there.
 
@@ -144,11 +144,11 @@ As a quick side-note, a lot of people don't know where the "/.:/" string comes f
 
 In short, this exploit connects to VulnServer on port 9999, sends the TRUN command, triggers a vulnerable function within VulnServer via the "/.:/" string, and overflows that function with a large input of A's, B's, and C's. The offset to the instruction pointer was calculated at offset 2003 bytes. This exploit should result in the hex characters "42424242" showing in EIP to demonstrate we have some level of control over the program.
 
-![screenshot](/assets/images/vulnserverdep/registers.PNG)
+![screenshot](/assets/img/vulnserverdep/registers.PNG)
 
 Excellent! We also have overflowed data showing in ESP. So all we have to do now is find a JMP ESP instruction, and we should be good to go, right?
 
-![screenshot](/assets/images/vulnserverdep/mona_jmp.PNG)
+![screenshot](/assets/img/vulnserverdep/mona_jmp.PNG)
 
 Wrong! There are a few problems here:
 
@@ -161,7 +161,7 @@ Let's see if we can make more progress with ROP.
 
 So we know we have some limitations with null-bytes and DEP. [Mona](https://github.com/corelan/mona) is an excellent exploit development, and debugging script made by [Corelan](https://www.corelan.be/). It has many features (one we've seen already with finding addresses containing JMP ESP opcodes). The one we will be focusing on right now is the "!mona rop" command. There are a lot of handy features with this command. Let's take a look at some of them:
 
-![screenshot](/assets/images/vulnserverdep/mona_rop_help.PNG)
+![screenshot](/assets/img/vulnserverdep/mona_rop_help.PNG)
 
 There are some flags we can already see will be of great use to us. Mainly, the "-cp" and "-m" arguments. We can use "-cp nonull" to look through modules that don't contain nullbytes in their address spaces, and the "-m <module_name>" argument to specify all modules, or specific ones. Let's generate a rop chain with the following command:
 
@@ -173,7 +173,7 @@ This command will search through all loaded modules, and build a chain of ROP ga
 
 Once it's finished, let's take a quick look at the ROP chain created, and take a deeper look at what's going on. 
 
-![screenshot](/assets/images/vulnserverdep/mona_rop_virtualalloc.PNG)
+![screenshot](/assets/img/vulnserverdep/mona_rop_virtualalloc.PNG)
 
 To the layman, this is a lot of information to take in. Even for me, having already gone through the SLAE course by Pentester Academy, there are some confusing operations going on. Let's take a look at the MSDN for `VirtualAlloc` and get a better understanding of how it relates to DEP.
 
@@ -296,7 +296,7 @@ main()
 
 After restarting the application and running....
 
-![screenshot](/assets/images/vulnserverdep/dep_bypassed.PNG)
+![screenshot](/assets/img/vulnserverdep/dep_bypassed.PNG)
 
 Wow! We did it! We bypassed DEP on Windows 10! All we need to do now is add a NOP sled for some safety, change our interrupts back to C's, implement some shellcode, and adjust for the new payload lengths. We'll skip the badchar enumeration and assume "\x00" is the only bad character (although, we should have done this much earlier in the process!).
 
@@ -417,7 +417,7 @@ main()
 
 Let's restart the application outside of the debugger, and run the exploit to see if we catch a shell:
 
-![screenshot](/assets/images/vulnserverdep/final.PNG)
+![screenshot](/assets/img/vulnserverdep/final.PNG)
 
 Outstanding! We caught the shell! This was a really fun exercise, and I learned a lot in the process. Unfortunately, there is one very MAJOR hiccup to this exploit...and that roadblock is...ASLR. There may be an avenue to make a 100% reliable and working exploit for this that can survive reboots, but with my current level of knowledge I don't know if it's possible. If it is, I don't know how I might approach it. You can try for yourself to understand what I mean. Try rebooting your virtual machine, and rerunning your exploit as-is. Does it work? Why doesn't it work? 
 

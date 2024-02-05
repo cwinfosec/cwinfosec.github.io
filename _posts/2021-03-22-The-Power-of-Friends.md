@@ -11,7 +11,7 @@ categories: [General, InfoSec, Career]
 
 Last year was both rough, and unusually easy for me. Shortly before starting this blog, I had passed the OSCP certification offered by Offensive Security. At the time, I was working as a network engineer for my employer doing a combo role of vulnerability management, network security engineering, and capacity management. It was a lot of stuff for one person to take on, and at times I felt like there was no room for error, complaining, or improving. I was on the fast road to burnout, but I've also been lucky enough to have great leadership. They saw my potential, and sent me to Wild West Hacking Fest in Deadwood, South Dakota. 
 
-![](/assets/images/friendship/mt_rushmore.jpg)
+![](/assets/img/friendship/mt_rushmore.jpg)
 
 I'm a huge fan of South Dakota, and in my opinion, the West side of the state has some of the most beautiful scenery on Earth. While there, I met a number of people in the industry: Johnny Long, Joff Thyer, Tim Medin, and many others! It was great! People were pwning stuff in the back of the first floor at the CTF, talks were going on non-stop, and I even tag-teamed with a nice lady at the lock-picking village. I ran up and distracted the guy with the badge, while she casually passed by him with the scanner, then we did all of the coding stuff and cloned the guy's badge to open the door....it was AWESOME.
 
@@ -19,7 +19,7 @@ Three people really stood out to me during that time. Technically, four people..
 
 So after awkwardly walking around aimlessly, I got in line for a beer when Amber (Heath's wife) was like "Hey! Do you want a sticker?!" So I was like "yeah, I'll take a sticker!" It didn't occur to me at the time that it was in fact Amber who had given the stickers to me, but nonetheless, I was like "hey, where did you get these?" and that's when she pointed to Heath. I was like "oh snap! hey!" Sometimes, I'm pretty awkward, but in my head I was like "I will probably never have this opportunity again, so f\*\*k it...don't be weird" and offered to buy him a beer. That ended up being one of the most awesome nights of my life, just chilling and having a great time with Heath, Amber, and [Jake Knowlton](https://twitter.com/j2k3k).
 
-![](/assets/images/friendship/thecybermentor.jpg)
+![](/assets/img/friendship/thecybermentor.jpg)
 
 The best advice I can give anyone that meets someone they look up to: don't put them on a pedastal. The people we look up to are just that - people. I think telling myself to just keep it nice and casual is what led to having a wonderful 2-3 hours with the three of them, and looking back, I wouldn't have traded that experience for anything else. This specific moment, hanging out with the three of them, also became a turning point in my career. 
 
