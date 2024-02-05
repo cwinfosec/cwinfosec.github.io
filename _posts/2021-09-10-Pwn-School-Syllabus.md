@@ -2,6 +2,7 @@
 layout: post
 title: Pwn School Project Syllabus
 date: 2021-09-10
+featured-img: pwnschool_splash
 categories: [General, Pentesting, InfoSec, Career]
 ---
 

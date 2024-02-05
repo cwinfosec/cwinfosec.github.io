@@ -2,6 +2,7 @@
 layout: post
 title: The Power of Friends In InfoSec
 date: 2021-03-22
+featured-img: friends_infosec_splash
 categories: [General, InfoSec, Career]
 ---
 

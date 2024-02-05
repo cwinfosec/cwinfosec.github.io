@@ -2,6 +2,7 @@
 layout: post
 title: SafeHarbor Write-Up
 date: 2019-10-12
+featured-img: safeharbor_splash
 categories: [VulnerableMachine, Pentesting, InfoSec, Writeup]
 ---
 

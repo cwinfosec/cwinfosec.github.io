@@ -2,6 +2,7 @@
 layout: post
 title: A Gentle Intro to ROP and Bypassing DEP
 date: 2019-11-29
+featured-img: rop_intro
 categories: [ExploitDev, Pentesting, InfoSec, Writeup]
 ---
 
