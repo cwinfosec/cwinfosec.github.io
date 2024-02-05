@@ -23,7 +23,7 @@ navigation: # Navigation links
 tagline: >
   cwinfosec - Worldwide
 
-hero_img: posts/banner.PNG # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
+hero_img: /assets/img/posts/banner.PNG # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
 email: cwinfosec@protonmail.com # email for form submission
 
