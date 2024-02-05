@@ -2,7 +2,7 @@
 title: Hack responsibly, learn relentlessly # your site title
 author: cwinfosec # You :P
 description: > # Meta description of Homepage
-  Hack responsibly, learn relentlessly
+  Hack Responsibly, Learn Relentlessly
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://cwinfosec.org/" # the base hostname & protocol for your site, e.g. http://example.com
 
